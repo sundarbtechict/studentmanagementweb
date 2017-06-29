@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>studentmanagementweb-JSP-</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>Index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+    <description></description>
+    <display-name>Insert1</display-name>
+    <servlet-name>Insert1</servlet-name>
+    <servlet-class>com.sundar.Insert1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Insert1</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <description></description>
+    <display-name>Edit1</display-name>
+    <servlet-name>Edit1</servlet-name>
+    <servlet-class>com.sundar.Edit1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Edit1</servlet-name>
+    <url-pattern>/edit1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>com.sundar.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
