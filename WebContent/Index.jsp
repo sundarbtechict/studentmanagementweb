@@ -36,20 +36,23 @@
 						while(itr.hasNext())  
 						{
 							Student st=itr.next();
-									out.println("<tr>"
-									+ "<td>"+st.getRegNo()+"</td>"
-									+ "<td>"+st.getName()+"</td>"
-									+ "<td>"+st.getDob()+"</td>"
-									+ "<td>"+st.getDept()+"</td>"
-									+ "<td>"+st.getEmail()+"</td>"
-									+ "<td>"+st.getMobile()+"</td>"
-									+"<td><a href='./Read.jsp?regno="+st.getRegNo()+"'>View</a></td>"
-									+"<td><a href='./Edit.jsp?regno="+st.getRegNo()+"'>Edit</a></td>"
-									+"<td><a href='./delete?regno="+st.getRegNo()+"'>Delete</a></td>"
-									+ "</tr>");
+			%>
+			<tr>
+				<td><%=st.getRegNo() %></td>
+				<td><%=st.getName()%></td>
+				<td><%=st.getDob()%></td>
+				<td><%=st.getDept()%></td>
+				<td><%=st.getEmail()%></td>
+				<td><%=st.getMobile()%></td>
+				<td><a href="./Read.jsp?regno=<%=st.getRegNo()%>">View</a></td>
+				<td><a href="./Edit.jsp?regno=<%=st.getRegNo()%>">Edit</a></td>
+				<td><a href="./delete?regno=<%=st.getRegNo()%>">Delete</a></td>
+
+				<%
 						}
-					 }catch (Exception e){System.out.println(e);}
-					 %>
+					 }catch (Exception e){ System.out.println("sas"); }
+			%>
+			
 		</table>
 		<a href="./././insert.html">create</a>
 	</div>
